@@ -28,7 +28,7 @@ builder.Services.AddIdentityServer(options =>
 
 
 }).AddInMemoryIdentityResources(
-                        IdentityConfiguration.IdentityResources)
+                      IdentityConfiguration.IdentityResources)
                     .AddInMemoryApiScopes(IdentityConfiguration.ApiScopes)
                     .AddInMemoryClients(IdentityConfiguration.Clients)
                     .AddAspNetIdentity<ApplicationUser>();
