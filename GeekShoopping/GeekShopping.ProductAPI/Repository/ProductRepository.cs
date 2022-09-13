@@ -1,17 +1,21 @@
 ﻿using AutoMapper;
-using GeekShopping.ProductAPI.Context;
 using GeekShopping.ProductAPI.Data.ValueObjects;
 using GeekShopping.ProductAPI.Model;
+using GeekShopping.ProductAPI.Model.Context;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace GeekShopping.ProductAPI.Repository
 {
     public class ProductRepository : IProductRepository
     {
-        private readonly SqlContext _context;
+        private readonly MySQLContext _context;
         private IMapper _mapper;
 
-        public ProductRepository(SqlContext context, IMapper mapper)
+        public ProductRepository(MySQLContext context, IMapper mapper)
         {
             _context = context;
             _mapper = mapper;

@@ -1,5 +1,4 @@
 ﻿using GeekShopping.Web.Models;
-using GeekShopping.WEB.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +8,10 @@ namespace GeekShopping.Web.Services.IServices
 {
     public interface IProductService
     {
-        Task<IEnumerable<ProductModel>> FindAllProducts();
-        Task<ProductModel> FindProductById(long id);
-        Task<ProductModel> CreateProduct(ProductModel model);
-        Task<ProductModel> UpdateProduct(ProductModel model);
-        Task<bool> DeleteProductById(long id);
+        Task<IEnumerable<ProductModel>> FindAllProducts(string token);
+        Task<ProductModel> FindProductById(long id, string token);
+        Task<ProductModel> CreateProduct(ProductModel model, string token);
+        Task<ProductModel> UpdateProduct(ProductModel model, string token);
+        Task<bool> DeleteProductById(long id, string token);
     }
 }
