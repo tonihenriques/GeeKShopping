@@ -1,4 +1,4 @@
-Aplicativo de referência de exemplo de microsserviços .NET Aplicativo de referência .NET Core de exemplo, original desenvolvido pela Microsoft, baseado em uma arquitetura simplificada de microsserviços e contêineres Docker.
+Aplicativo de referência de exemplo de microsserviços .NET Aplicativo de referência .NET Core de exemplo, original documentação Microsoft, baseado em uma arquitetura simplificada de microsserviços e contêineres Docker.
 Segurança: oauth2, openConectID, Microsoft.IdentityServer. Fila RabbitMQ e GatwayAPI.
 
 
