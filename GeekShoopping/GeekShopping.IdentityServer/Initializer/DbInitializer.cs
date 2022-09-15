@@ -9,11 +9,11 @@ namespace GeekShopping.IdentityServer.Initializer
 {
     public class DbInitializer : IDbInitializer
     {
-        private readonly SQLContext _context;
+        private readonly SqlContext _context;
         private readonly UserManager<ApplicationUser> _user;
         private readonly RoleManager<IdentityRole> _role;
 
-        public DbInitializer(SQLContext context,
+        public DbInitializer(SqlContext context,
             UserManager<ApplicationUser> user,
             RoleManager<IdentityRole> role)
         {

@@ -1,7 +1,10 @@
+using Duende.IdentityServer.AspNetIdentity;
+using Duende.IdentityServer.Services;
 using GeekShopping.IdentityServer.Configuration;
 using GeekShopping.IdentityServer.Initializer;
 using GeekShopping.IdentityServer.Model;
 using GeekShopping.IdentityServer.Model.Context;
+using GeekShopping.IdentityServer.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,14 +14,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 
-builder.Services.AddDbContext<SQLContext>(options =>
+builder.Services.AddDbContext<SqlContext>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("SQLConectionString")));
 
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
-    .AddEntityFrameworkStores<SQLContext>()
+    .AddEntityFrameworkStores<SqlContext>()
     .AddDefaultTokenProviders();
 
-builder.Services.AddIdentityServer(options =>
+var build = builder.Services.AddIdentityServer(options =>
 {
     options.Events.RaiseErrorEvents = true;
     options.Events.RaiseInformationEvents = true;
@@ -35,9 +38,12 @@ builder.Services.AddIdentityServer(options =>
 
 builder.Services.AddScoped<IDbInitializer, DbInitializer>();
 
+builder.Services.AddScoped<IProfileService, ProfileService>();
 
-builder.Services.BuildServiceProvider()
-    .GetService<IDbInitializer>()!.Initialize();
+build.AddDeveloperSigningCredential();
+
+builder.Services.AddControllersWithViews();
+
 
 var app = builder.Build();
 
@@ -58,6 +64,10 @@ app.UseRouting();
 app.UseIdentityServer();
 
 app.UseAuthorization();
+
+builder.Services.BuildServiceProvider()
+    .GetService<IDbInitializer>()!.Initialize();
+
 
 app.MapControllerRoute(
     name: "default",
