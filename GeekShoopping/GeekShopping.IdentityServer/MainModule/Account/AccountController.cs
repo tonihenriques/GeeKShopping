@@ -25,11 +25,11 @@ using System.Security.Claims;
 
 namespace IdentityServerHost.Quickstart.UI
 {
-/// <summary>
-/// This sample controller implements a typical login/logout/provision workflow for local and external accounts.
-/// The login service encapsulates the interactions with the user data store. This data store is in-memory only and cannot be used for production!
-/// The interaction service provides a way for the UI to communicate with identityserver for validation and context retrieval
-/// </summary>
+    /// <summary>
+    /// This sample controller implements a typical login/logout/provision workflow for local and external accounts.
+    /// The login service encapsulates the interactions with the user data store. This data store is in-memory only and cannot be used for production!
+    /// The interaction service provides a way for the UI to communicate with identityserver for validation and context retrieval
+    /// </summary>
     [SecurityHeaders]
     [AllowAnonymous]
     public class AccountController : Controller
@@ -187,7 +187,7 @@ namespace IdentityServerHost.Quickstart.UI
                     }
                 }
 
-                await _events.RaiseAsync(new UserLoginFailureEvent(model.Username, "invalid credentials", clientId:context?.Client.ClientId));
+                await _events.RaiseAsync(new UserLoginFailureEvent(model.Username, "invalid credentials", clientId: context?.Client.ClientId));
                 ModelState.AddModelError(string.Empty, AccountOptions.InvalidCredentialsErrorMessage);
             }
 
@@ -196,7 +196,7 @@ namespace IdentityServerHost.Quickstart.UI
             return View(vm);
         }
 
-        
+
         /// <summary>
         /// Show logout page
         /// </summary>
@@ -271,35 +271,35 @@ namespace IdentityServerHost.Quickstart.UI
         public async Task<IActionResult> Register(RegisterViewModel model, string returnUrl = null)
         {
             ViewData["ReturnUrl"] = returnUrl;
-            if (ModelState.IsValid)
+
+
+
+            var user = new ApplicationUser
             {
+                UserName = model.Username,
+                Email = model.Email,
+                EmailConfirmed = true,
+                FirstName = model.FirstName,
+                LastName = model.LastName
+            };
 
-                var user = new ApplicationUser
+            var result = await _userManager.CreateAsync(user, model.Password);
+            if (result.Succeeded)
+            {
+                if (!_roleManager.RoleExistsAsync(model.RoleName).GetAwaiter().GetResult())
                 {
-                    UserName = model.Username,
-                    Email = model.Email,
-                    EmailConfirmed = true,
-                    FirstName = model.FirstName,
-                    LastName = model.LastName
-                };
-
-                var result = await _userManager.CreateAsync(user, model.Password);
-                if (result.Succeeded)
-                {
-                    if (!_roleManager.RoleExistsAsync(model.RoleName).GetAwaiter().GetResult())
+                    var userRole = new IdentityRole
                     {
-                        var userRole = new IdentityRole
-                        {
-                            Name = model.RoleName,
-                            NormalizedName = model.RoleName,
+                        Name = "Client",
+                        NormalizedName = "CLIENT",
 
-                        };
-                        await _roleManager.CreateAsync(userRole);
-                    }
+                    };
+                    await _roleManager.CreateAsync(userRole);
+                }
 
-                    await _userManager.AddToRoleAsync(user, model.RoleName);
+                await _userManager.AddToRoleAsync(user, model.RoleName);
 
-                    await _userManager.AddClaimsAsync(user, new Claim[]{
+                await _userManager.AddClaimsAsync(user, new Claim[]{
                     new Claim(JwtClaimTypes.Name, model.Username),
                     new Claim(JwtClaimTypes.Email, model.Email),
                     new Claim(JwtClaimTypes.FamilyName, model.FirstName),
@@ -307,48 +307,54 @@ namespace IdentityServerHost.Quickstart.UI
                     new Claim(JwtClaimTypes.WebSite, $"http://{model.Username}.com"),
                     new Claim(JwtClaimTypes.Role,"User") });
 
-                    var context = await _interaction.GetAuthorizationContextAsync(model.ReturnUrl);
-                    var loginresult = await _signInManager.PasswordSignInAsync(model.Username, model.Password, false, lockoutOnFailure: true);
-                    if (loginresult.Succeeded)
+                var context = await _interaction.GetAuthorizationContextAsync(model.ReturnUrl);
+                var loginresult = await _signInManager.PasswordSignInAsync(model.Username, model.Password, false, lockoutOnFailure: true);
+                if (loginresult.Succeeded)
+                {
+                    var checkuser = await _userManager.FindByNameAsync(model.Username);
+                    await _events.RaiseAsync(new UserLoginSuccessEvent(checkuser.UserName, checkuser.Id, checkuser.UserName, clientId: context?.Client.ClientId));
+
+                    if (context != null)
                     {
-                        var checkuser = await _userManager.FindByNameAsync(model.Username);
-                        await _events.RaiseAsync(new UserLoginSuccessEvent(checkuser.UserName, checkuser.Id, checkuser.UserName, clientId: context?.Client.ClientId));
-
-                        if (context != null)
+                        if (context.IsNativeClient())
                         {
-                            if (context.IsNativeClient())
-                            {
-                                // The client is native, so this change in how to
-                                // return the response is for better UX for the end user.
-                                return this.LoadingPage("Redirect", model.ReturnUrl);
-                            }
-
-                            // we can trust model.ReturnUrl since GetAuthorizationContextAsync returned non-null
-                            return Redirect(model.ReturnUrl);
+                            // The client is native, so this change in how to
+                            // return the response is for better UX for the end user.
+                            return this.LoadingPage("Redirect", model.ReturnUrl);
                         }
 
-                        // request for a local page
-                        if (Url.IsLocalUrl(model.ReturnUrl))
-                        {
-                            return Redirect(model.ReturnUrl);
-                        }
-                        else if (string.IsNullOrEmpty(model.ReturnUrl))
-                        {
-                            return Redirect("~/");
-                        }
-                        else
-                        {
-                            // user might have clicked on a malicious link - should be logged
-                            throw new Exception("invalid return URL");
-                        }
+                        // we can trust model.ReturnUrl since GetAuthorizationContextAsync returned non-null
+                        return Redirect(model.ReturnUrl);
                     }
 
+                    // request for a local page
+                    if (Url.IsLocalUrl(model.ReturnUrl))
+                    {
+                        return Redirect(model.ReturnUrl);
+                    }
+                    else if (string.IsNullOrEmpty(model.ReturnUrl))
+                    {
+                        return Redirect("~/");
+                    }
+                    else
+                    {
+                        // user might have clicked on a malicious link - should be logged
+                        throw new Exception("invalid return URL");
+                    }
                 }
-            }
 
+
+            }
             // If we got this far, something failed, redisplay form
             return View(model);
         }
+
+        
+    
+                
+
+            
+ 
 
         private async Task<RegisterViewModel> BuildRegisterViewModelAsync(string returnUrl)
         {
