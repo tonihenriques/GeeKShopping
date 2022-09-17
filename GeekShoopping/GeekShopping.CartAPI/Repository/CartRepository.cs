@@ -116,13 +116,13 @@ namespace GeekShopping.CartAPI.Repository
                 //If CartHeader is not null
                 //Check if CartDetails has same product
                 var cartDetail = await _context.CartDetail.AsNoTracking().FirstOrDefaultAsync(
-                    p => p.ProductId == vo.CartDetail.FirstOrDefault().ProductId &&
+                    p => p.ProductId == cart.CartDetail.FirstOrDefault().ProductId &&
                     p.CartHeaderId == cartHeader.Id);
 
                 if (cartDetail == null)
                 {
                     //Create CartDetails
-                    cart.CartDetail.FirstOrDefault().CartHeaderId = cart.CartHeader.Id;
+                    cart.CartDetail.FirstOrDefault().CartHeaderId = cartHeader.Id;
                     cart.CartDetail.FirstOrDefault().Product = null;
                     _context.CartDetail.Add(cart.CartDetail.FirstOrDefault());
                     await _context.SaveChangesAsync();

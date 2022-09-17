@@ -1,6 +1,6 @@
 using System;
 
-namespace GeekShopping.WEB.Models
+namespace GeekShopping.Web.Models
 {
     public class ErrorViewModel
     {

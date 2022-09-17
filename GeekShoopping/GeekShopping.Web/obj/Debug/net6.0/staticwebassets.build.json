@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "z9KXF2gloEnu98zoZXJOQ9V0ky7RdJ+HIpIhuXBVAXU=",
+  "Hash": "FjRenr6pzdfoJfGhfFTJR0gcvjrM9geY9k15pmu5Hyg=",
   "Source": "GeekShopping.Web",
   "BasePath": "_content/GeekShopping.Web",
   "Mode": "Default",
@@ -16,40 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "C:\\Users\\Tonic\\Documents\\TreinamentoMicroservico\\GeeKShopping\\GeekShoopping\\GeekShopping.Web\\obj\\Debug\\net6.0\\scopedcss\\bundle\\GeekShopping.Web.styles.css",
-      "SourceId": "GeekShopping.Web",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Tonic\\Documents\\TreinamentoMicroservico\\GeeKShopping\\GeekShoopping\\GeekShopping.Web\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/GeekShopping.Web",
-      "RelativePath": "GeekShopping.Web.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Tonic\\Documents\\TreinamentoMicroservico\\GeeKShopping\\GeekShoopping\\GeekShopping.Web\\obj\\Debug\\net6.0\\scopedcss\\bundle\\GeekShopping.Web.styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\Tonic\\Documents\\TreinamentoMicroservico\\GeeKShopping\\GeekShoopping\\GeekShopping.Web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\GeekShopping.Web.bundle.scp.css",
-      "SourceId": "GeekShopping.Web",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Tonic\\Documents\\TreinamentoMicroservico\\GeeKShopping\\GeekShoopping\\GeekShopping.Web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/GeekShopping.Web",
-      "RelativePath": "GeekShopping.Web.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Tonic\\Documents\\TreinamentoMicroservico\\GeeKShopping\\GeekShoopping\\GeekShopping.Web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\GeekShopping.Web.bundle.scp.css"
-    },
     {
       "Identity": "C:\\Users\\Tonic\\Documents\\TreinamentoMicroservico\\GeeKShopping\\GeekShoopping\\GeekShopping.Web\\wwwroot\\css\\site.css",
       "SourceId": "GeekShopping.Web",
