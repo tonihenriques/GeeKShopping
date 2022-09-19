@@ -2,6 +2,7 @@ Aplicativo de referência de exemplo de microsserviços .NET Aplicativo de refer
 Segurança: oauth2, openConectID, Microsoft.IdentityServer. Fila RabbitMQ e GatwayAPI.
 
 REF:  Arquitetura de microsserviços com ASP.NET, .NET 'Core' 6, Oauth2, OpenID, Identity Server, RabbitMQ, Ocelot, C# com Leandro Costa Udemy;
+https://www.udemy.com/share/105tjD3@_QAbdMUJ2UTnnxFIFpnR9nhpcc3sPqhJKfPc-YyyQBNtsxFRQD-jP6Wn9VcM-i5aMA==/
 
 Lembrando: O foco é MICROSERVIÇOS
 
