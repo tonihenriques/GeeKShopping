@@ -1,6 +1,7 @@
 Aplicativo de referência de exemplo de microsserviços .NET Aplicativo de referência .NET Core de exemplo, original documentação Microsoft, baseado em uma arquitetura simplificada de microsserviços e contêineres Docker.
 Segurança: oauth2, openConectID, Microsoft.IdentityServer. Fila RabbitMQ e GatwayAPI.
-Ref:  Arquitetura de microsserviços com ASP.NET, .NET 'Core' 6, Oauth2, OpenID, Identity Server, RabbitMQ, Ocelot, C# com Leandro Costa Udemy;
+
+REF:  Arquitetura de microsserviços com ASP.NET, .NET 'Core' 6, Oauth2, OpenID, Identity Server, RabbitMQ, Ocelot, C# com Leandro Costa Udemy;
 
 Lembrando: O foco é MICROSERVIÇOS
 
