@@ -12,8 +12,15 @@ builder.Services.AddHttpClient<ICartService, CartService>(c =>
                     c.BaseAddress = new Uri(builder.Configuration["ServiceUrls:CartAPI"])
                 );
 
+builder.Services.AddHttpClient<Iteste, teste>(c =>
+                    c.BaseAddress = new Uri(builder.Configuration["ServiceUrls:teste"])
+                );
+
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+
 
 builder.Services.AddAuthentication(options =>
 {

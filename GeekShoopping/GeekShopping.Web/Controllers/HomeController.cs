@@ -46,32 +46,35 @@ namespace GeekShopping.Web.Controllers
         [Authorize]
         public async Task<IActionResult> DetailsPost(ProductViewModel model)
         {
-            var token = await HttpContext.GetTokenAsync("access_token");
+           
+                var token = await HttpContext.GetTokenAsync("access_token");
 
-            CartViewModel cart = new()
-            {
-                CartHeader = new CartHeaderViewModel
+                CartViewModel cart = new()
                 {
-                    UserId = User.Claims.Where(u => u.Type == "sub")?.FirstOrDefault()?.Value
+                    CartHeader = new CartHeaderViewModel
+                    {
+                        UserId = User.Claims.Where(u => u.Type == "sub")?.FirstOrDefault()?.Value
+                    }
+                };
+
+                CartDetailViewModel cartDetail = new CartDetailViewModel()
+                {
+                    Count = model.Count,
+                    ProductId = model.Id,
+                    Product = await _productService.FindProductById(model.Id, token)
+                };
+
+                List<CartDetailViewModel> cartDetails = new List<CartDetailViewModel>();
+                cartDetails.Add(cartDetail);
+                cart.CartDetails = cartDetails;
+
+                var response = await _cartService.AddItemToCart(cart, token);
+
+                if (response != null)
+                {
+                    return RedirectToAction(nameof(Index));
                 }
-            };
-
-            CartDetailViewModel cartDetail = new CartDetailViewModel()
-            {
-                Count = model.Count,
-                ProductId = model.Id,
-                Product = await _productService.FindProductById(model.Id, token)
-            };
-
-            List<CartDetailViewModel> cartDetails = new List<CartDetailViewModel>();
-            cartDetails.Add(cartDetail);
-            cart.CartDetails = cartDetails;
-
-            var response = await _cartService.AddItemToCart(cart, token);
-            if(response != null)
-            {
-                return RedirectToAction(nameof(Index));
-            }
+            
             return View(model);
         }
 

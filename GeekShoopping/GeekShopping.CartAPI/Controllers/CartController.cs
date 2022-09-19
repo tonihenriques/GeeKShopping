@@ -1,17 +1,12 @@
 ﻿using GeekShopping.CartAPI.Data.ValueObjects;
 using GeekShopping.CartAPI.Repository;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace GeekShopping.CartAPI.Controllers
 {
-    [ApiController]
+
     [Route("api/v1/[controller]")]
+    [ApiController]    
     public class CartController : ControllerBase
     {
         private ICartRepository _repository;
@@ -22,14 +17,24 @@ namespace GeekShopping.CartAPI.Controllers
                 ArgumentNullException(nameof(repository));
         }
 
-        [HttpGet("find-cart/{id}")]
-        public async Task<ActionResult<CartVO>> FindById(string Id)
+        [HttpGet("add-cart")]
+        public IEnumerable<CartVO> Get()
         {
-            var cart = await _repository.FindCartByUserId(Id);
+
+            return null;
+
+        }
+
+
+        [HttpGet("find-cart/{id}")]
+        public async Task<ActionResult<CartVO>> FindById(string id)
+        {
+            var cart = await _repository.FindCartByUserId(id);
             if (cart == null) return NotFound();
             return Ok(cart);
         }
 
+       
         [HttpPost("add-cart")]
         public async Task<ActionResult<CartVO>> AddCart(CartVO vo)
         {

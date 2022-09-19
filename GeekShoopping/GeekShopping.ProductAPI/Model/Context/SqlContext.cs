@@ -9,6 +9,7 @@ namespace GeekShopping.ProductAPI.Model.Context
 
         public DbSet<Product> Products { get; set; }
 
+       
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Product>().HasData(new Product
