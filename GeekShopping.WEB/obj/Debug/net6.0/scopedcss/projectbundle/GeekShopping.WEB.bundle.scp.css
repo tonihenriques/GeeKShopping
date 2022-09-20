@@ -1,46 +1,46 @@
-/* _content/GeekShopping.WEB/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* _content/GeekShopping.Web/Views/Shared/_Layout.cshtml.rz.scp.css */
 /* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
-a.navbar-brand[b-ucjlz2x5py] {
+a.navbar-brand[b-ucjgrfndyd] {
   white-space: normal;
   text-align: center;
   word-break: break-all;
 }
 
-a[b-ucjlz2x5py] {
+a[b-ucjgrfndyd] {
   color: #0077cc;
 }
 
-.btn-primary[b-ucjlz2x5py] {
+.btn-primary[b-ucjgrfndyd] {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
 
-.nav-pills .nav-link.active[b-ucjlz2x5py], .nav-pills .show > .nav-link[b-ucjlz2x5py] {
+.nav-pills .nav-link.active[b-ucjgrfndyd], .nav-pills .show > .nav-link[b-ucjgrfndyd] {
   color: #fff;
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
 
-.border-top[b-ucjlz2x5py] {
+.border-top[b-ucjgrfndyd] {
   border-top: 1px solid #e5e5e5;
 }
-.border-bottom[b-ucjlz2x5py] {
+.border-bottom[b-ucjgrfndyd] {
   border-bottom: 1px solid #e5e5e5;
 }
 
-.box-shadow[b-ucjlz2x5py] {
+.box-shadow[b-ucjgrfndyd] {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
-button.accept-policy[b-ucjlz2x5py] {
+button.accept-policy[b-ucjgrfndyd] {
   font-size: 1rem;
   line-height: inherit;
 }
 
-.footer[b-ucjlz2x5py] {
+.footer[b-ucjgrfndyd] {
   position: absolute;
   bottom: 0;
   width: 100%;

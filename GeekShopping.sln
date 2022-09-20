@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{3EEF05CA-789A-4E33-9911-5EE63935C1A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{0C3A1735-43CD-474B-96B4-9A1FC7FE5E19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeekShopping.Web", "GeekShopping.Web\GeekShopping.Web.csproj", "{B65EDEDC-DB3E-463C-8EAB-0F6F154BF5B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeekShopping.ProductAPI", "GeekShopping.ProductAPI\GeekShopping.ProductAPI.csproj", "{6AE7557F-AA35-4C17-A925-B3F9DA9B1496}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeekShopping.IdentityServer", "GeekShopping.IdentityServer\GeekShopping.IdentityServer.csproj", "{1F167E17-D43A-4AB5-80A2-A1D038EE0E82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeekShopping.CartAPI", "GeekShopping.CartAPI\GeekShopping.CartAPI.csproj", "{AE0DDE54-BA83-4A4F-A266-5D7FF637584D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B65EDEDC-DB3E-463C-8EAB-0F6F154BF5B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B65EDEDC-DB3E-463C-8EAB-0F6F154BF5B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B65EDEDC-DB3E-463C-8EAB-0F6F154BF5B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B65EDEDC-DB3E-463C-8EAB-0F6F154BF5B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AE7557F-AA35-4C17-A925-B3F9DA9B1496}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AE7557F-AA35-4C17-A925-B3F9DA9B1496}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AE7557F-AA35-4C17-A925-B3F9DA9B1496}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AE7557F-AA35-4C17-A925-B3F9DA9B1496}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F167E17-D43A-4AB5-80A2-A1D038EE0E82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F167E17-D43A-4AB5-80A2-A1D038EE0E82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F167E17-D43A-4AB5-80A2-A1D038EE0E82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F167E17-D43A-4AB5-80A2-A1D038EE0E82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE0DDE54-BA83-4A4F-A266-5D7FF637584D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE0DDE54-BA83-4A4F-A266-5D7FF637584D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE0DDE54-BA83-4A4F-A266-5D7FF637584D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE0DDE54-BA83-4A4F-A266-5D7FF637584D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B65EDEDC-DB3E-463C-8EAB-0F6F154BF5B5} = {3EEF05CA-789A-4E33-9911-5EE63935C1A1}
+		{6AE7557F-AA35-4C17-A925-B3F9DA9B1496} = {0C3A1735-43CD-474B-96B4-9A1FC7FE5E19}
+		{1F167E17-D43A-4AB5-80A2-A1D038EE0E82} = {0C3A1735-43CD-474B-96B4-9A1FC7FE5E19}
+		{AE0DDE54-BA83-4A4F-A266-5D7FF637584D} = {0C3A1735-43CD-474B-96B4-9A1FC7FE5E19}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9ECD39B-A0C2-4757-A344-074DB500CBCC}
+	EndGlobalSection
+EndGlobal
