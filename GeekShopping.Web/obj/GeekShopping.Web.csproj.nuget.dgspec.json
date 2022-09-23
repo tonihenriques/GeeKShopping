@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tonic\\Documents\\ProjetoGeekshopping\\GeekShopping\\GeekShopping.Web\\GeekShopping.Web.csproj": {}
+    "C:\\Users\\Tonic\\Documents\\GeekShoppingCore05\\GeekShoppingCore5.0\\GeekShopping.Web\\GeekShopping.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tonic\\Documents\\ProjetoGeekshopping\\GeekShopping\\GeekShopping.Web\\GeekShopping.Web.csproj": {
+    "C:\\Users\\Tonic\\Documents\\GeekShoppingCore05\\GeekShoppingCore5.0\\GeekShopping.Web\\GeekShopping.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tonic\\Documents\\ProjetoGeekshopping\\GeekShopping\\GeekShopping.Web\\GeekShopping.Web.csproj",
+        "projectUniqueName": "C:\\Users\\Tonic\\Documents\\GeekShoppingCore05\\GeekShoppingCore5.0\\GeekShopping.Web\\GeekShopping.Web.csproj",
         "projectName": "GeekShopping.Web",
-        "projectPath": "C:\\Users\\Tonic\\Documents\\ProjetoGeekshopping\\GeekShopping\\GeekShopping.Web\\GeekShopping.Web.csproj",
+        "projectPath": "C:\\Users\\Tonic\\Documents\\GeekShoppingCore05\\GeekShoppingCore5.0\\GeekShopping.Web\\GeekShopping.Web.csproj",
         "packagesPath": "C:\\Users\\Tonic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tonic\\Documents\\ProjetoGeekshopping\\GeekShopping\\GeekShopping.Web\\obj\\",
+        "outputPath": "C:\\Users\\Tonic\\Documents\\GeekShoppingCore05\\GeekShoppingCore5.0\\GeekShopping.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tonic\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -37,20 +37,20 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.OpenIdConnect": {
               "target": "Package",
-              "version": "[6.0.9, )"
+              "version": "[5.0.0, )"
             },
-            "Microsoft.IdentityModel.Tokens": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
-              "version": "[6.23.1, )"
-            },
-            "System.IdentityModel.Tokens.Jwt": {
-              "target": "Package",
-              "version": "[6.23.1, )"
+              "version": "[5.0.0, )"
             }
           },
           "imports": [

@@ -8,8 +8,8 @@ namespace GeekShopping.CartAPI.Model.Context
         public SqlContext(DbContextOptions<SqlContext> options) : base(options) {}
 
         public DbSet<Product> Products { get; set; }
-        public DbSet<CartDetail> CartDetail { get; set; }
-        public DbSet<CartHeader> CartHeader { get; set; }
+        public DbSet<CartDetail> CartDetails { get; set; }
+        public DbSet<CartHeader> CartHeaders { get; set; }
 
        
     }

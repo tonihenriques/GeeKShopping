@@ -1,32 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tonic\\Documents\\ProjetoGeekshopping\\GeekShopping\\GeekShopping.CartAPI\\GeekShopping.CartAPI.csproj": {}
+    "C:\\Users\\Tonic\\Documents\\GeekShoppingCore05\\GeekShoppingCore5.0\\GeekShopping.CartAPI\\GeekShopping.CartAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tonic\\Documents\\ProjetoGeekshopping\\GeekShopping\\GeekShopping.CartAPI\\GeekShopping.CartAPI.csproj": {
+    "C:\\Users\\Tonic\\Documents\\GeekShoppingCore05\\GeekShoppingCore5.0\\GeekShopping.CartAPI\\GeekShopping.CartAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tonic\\Documents\\ProjetoGeekshopping\\GeekShopping\\GeekShopping.CartAPI\\GeekShopping.CartAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Tonic\\Documents\\GeekShoppingCore05\\GeekShoppingCore5.0\\GeekShopping.CartAPI\\GeekShopping.CartAPI.csproj",
         "projectName": "GeekShopping.CartAPI",
-        "projectPath": "C:\\Users\\Tonic\\Documents\\ProjetoGeekshopping\\GeekShopping\\GeekShopping.CartAPI\\GeekShopping.CartAPI.csproj",
+        "projectPath": "C:\\Users\\Tonic\\Documents\\GeekShoppingCore05\\GeekShoppingCore5.0\\GeekShopping.CartAPI\\GeekShopping.CartAPI.csproj",
         "packagesPath": "C:\\Users\\Tonic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tonic\\Documents\\ProjetoGeekshopping\\GeekShopping\\GeekShopping.CartAPI\\obj\\",
+        "outputPath": "C:\\Users\\Tonic\\Documents\\GeekShoppingCore05\\GeekShoppingCore5.0\\GeekShopping.CartAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tonic\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net5.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net5.0": {
+            "targetAlias": "net5.0",
             "projectReferences": {}
           }
         },
@@ -37,8 +37,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net5.0": {
+          "targetAlias": "net5.0",
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
@@ -50,29 +50,29 @@
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[6.0.9, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.9, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.9, )"
+              "version": "[5.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[5.6.3, )"
             },
             "Swashbuckle.AspNetCore.Annotations": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[5.6.3, )"
             },
             "Swashbuckle.AspNetCore.SwaggerUI": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[5.6.3, )"
             }
           },
           "imports": [
