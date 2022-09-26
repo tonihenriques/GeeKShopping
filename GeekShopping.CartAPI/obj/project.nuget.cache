@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZQsIwUQ5Hb8noO7B9mEU7efYcYqGIBskyi+Jq9t07aZ5NLG5rkWazW479FqzrtBxscE69oHZm5AcC2nyUM3opQ==",
+  "dgSpecHash": "BSXPsLBnXUBkTz0hR8Le9tZJuF7c1GeBWvkrsUIBLBM2wXOYSro77iWFGDIgxeBUGwhVXQkdYRa8qgzhiDKHSw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tonic\\Documents\\GeekShoppingCore05\\GeekShoppingCore5.0\\GeekShopping.CartAPI\\GeekShopping.CartAPI.csproj",
+  "projectFilePath": "C:\\Users\\Tonic\\Documents\\GeekSopping_Core05\\GeeKShopping\\GeekShopping.CartAPI\\GeekShopping.CartAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Tonic\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Tonic\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

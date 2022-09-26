@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tonic\\Documents\\GeekShoppingCore05\\GeekShoppingCore5.0\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj": {}
+    "C:\\Users\\Tonic\\Documents\\GeekSopping_Core05\\GeeKShopping\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tonic\\Documents\\GeekShoppingCore05\\GeekShoppingCore5.0\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj": {
+    "C:\\Users\\Tonic\\Documents\\GeekSopping_Core05\\GeeKShopping\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tonic\\Documents\\GeekShoppingCore05\\GeekShoppingCore5.0\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj",
+        "projectUniqueName": "C:\\Users\\Tonic\\Documents\\GeekSopping_Core05\\GeeKShopping\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj",
         "projectName": "GeekShopping.IdentityServer",
-        "projectPath": "C:\\Users\\Tonic\\Documents\\GeekShoppingCore05\\GeekShoppingCore5.0\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj",
+        "projectPath": "C:\\Users\\Tonic\\Documents\\GeekSopping_Core05\\GeeKShopping\\GeekShopping.IdentityServer\\GeekShopping.IdentityServer.csproj",
         "packagesPath": "C:\\Users\\Tonic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tonic\\Documents\\GeekShoppingCore05\\GeekShoppingCore5.0\\GeekShopping.IdentityServer\\obj\\",
+        "outputPath": "C:\\Users\\Tonic\\Documents\\GeekSopping_Core05\\GeeKShopping\\GeekShopping.IdentityServer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tonic\\AppData\\Roaming\\NuGet\\NuGet.Config",

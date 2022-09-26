@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tonic\\Documents\\GeekShoppingCore05\\GeekShoppingCore5.0\\GeekShopping.Web\\GeekShopping.Web.csproj": {}
+    "C:\\Users\\Tonic\\Documents\\GeekSopping_Core05\\GeeKShopping\\GeekShopping.Web\\GeekShopping.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tonic\\Documents\\GeekShoppingCore05\\GeekShoppingCore5.0\\GeekShopping.Web\\GeekShopping.Web.csproj": {
+    "C:\\Users\\Tonic\\Documents\\GeekSopping_Core05\\GeeKShopping\\GeekShopping.Web\\GeekShopping.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tonic\\Documents\\GeekShoppingCore05\\GeekShoppingCore5.0\\GeekShopping.Web\\GeekShopping.Web.csproj",
+        "projectUniqueName": "C:\\Users\\Tonic\\Documents\\GeekSopping_Core05\\GeeKShopping\\GeekShopping.Web\\GeekShopping.Web.csproj",
         "projectName": "GeekShopping.Web",
-        "projectPath": "C:\\Users\\Tonic\\Documents\\GeekShoppingCore05\\GeekShoppingCore5.0\\GeekShopping.Web\\GeekShopping.Web.csproj",
+        "projectPath": "C:\\Users\\Tonic\\Documents\\GeekSopping_Core05\\GeeKShopping\\GeekShopping.Web\\GeekShopping.Web.csproj",
         "packagesPath": "C:\\Users\\Tonic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tonic\\Documents\\GeekShoppingCore05\\GeekShoppingCore5.0\\GeekShopping.Web\\obj\\",
+        "outputPath": "C:\\Users\\Tonic\\Documents\\GeekSopping_Core05\\GeeKShopping\\GeekShopping.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tonic\\AppData\\Roaming\\NuGet\\NuGet.Config",
