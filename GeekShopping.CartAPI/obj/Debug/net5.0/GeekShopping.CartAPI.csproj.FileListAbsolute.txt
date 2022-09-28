@@ -128,3 +128,6 @@ C:\Users\Tonic\Documents\GeekSopping_Core05\GeeKShopping\GeekShopping.CartAPI\ob
 C:\Users\Tonic\Documents\GeekSopping_Core05\GeeKShopping\GeekShopping.CartAPI\obj\Debug\net5.0\GeekShopping.CartAPI.pdb
 C:\Users\Tonic\Documents\GeekSopping_Core05\GeeKShopping\GeekShopping.CartAPI\obj\Debug\net5.0\GeekShopping.CartAPI.genruntimeconfig.cache
 C:\Users\Tonic\Documents\GeekSopping_Core05\GeeKShopping\GeekShopping.CartAPI\obj\Debug\net5.0\ref\GeekShopping.CartAPI.dll
+C:\Users\Tonic\Documents\GeekSopping_Core05\GeeKShopping\GeekShopping.CartAPI\bin\Debug\net5.0\RabbitMQ.Client.dll
+C:\Users\Tonic\Documents\GeekSopping_Core05\GeeKShopping\GeekShopping.CartAPI\bin\Debug\net5.0\GeekShopping.MessageBus.dll
+C:\Users\Tonic\Documents\GeekSopping_Core05\GeeKShopping\GeekShopping.CartAPI\bin\Debug\net5.0\GeekShopping.MessageBus.pdb
