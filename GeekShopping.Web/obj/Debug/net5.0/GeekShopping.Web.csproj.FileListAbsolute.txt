@@ -736,3 +736,4 @@ C:\Users\Tonic\Documents\GeekSopping_Core05\GeeKShopping\GeekShopping.Web\obj\De
 C:\Users\Tonic\Documents\GeekSopping_Core05\GeeKShopping\GeekShopping.Web\obj\Debug\net5.0\GeekShopping.Web.pdb
 C:\Users\Tonic\Documents\GeekSopping_Core05\GeeKShopping\GeekShopping.Web\obj\Debug\net5.0\GeekShopping.Web.genruntimeconfig.cache
 C:\Users\Tonic\Documents\GeekSopping_Core05\GeeKShopping\GeekShopping.Web\obj\Debug\net5.0\ref\GeekShopping.Web.dll
+C:\Users\Tonic\Documents\GeekSopping_Core05\GeeKShopping\GeekShopping.Web\obj\Debug\net5.0\Razor\Views\Cart\CartIndex.cshtml.g.cs
