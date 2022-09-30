@@ -1,5 +1,6 @@
 using GeekShopping.OrderAPI.MessageConsumer;
 using GeekShopping.OrderAPI.Model.Context;
+using GeekShopping.OrderAPI.RabbitMQSender;
 using GeekShopping.OrderAPI.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -35,7 +36,8 @@ namespace GeekShopping.OrderAPI
 
             services.AddSingleton(new OrderRepository(builder.Options));
 
-            services.AddHostedService<RabbitMQCheckoutConsumer>();
+            services.AddHostedService<RabbitMQCheckoutConsumer>();          
+            services.AddSingleton<IRabbitMQMessageSender, RabbitMQMessageSender>();
 
             services.AddControllers();
             services.AddAuthentication("Bearer")
