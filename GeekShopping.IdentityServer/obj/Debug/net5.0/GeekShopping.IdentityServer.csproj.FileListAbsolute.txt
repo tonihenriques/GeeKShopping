@@ -192,4 +192,4 @@ C:\Users\Tonic\Documents\GeekSopping_Core05\GeeKShopping\GeekShopping.IdentitySe
 C:\Users\Tonic\Documents\GeekSopping_Core05\GeeKShopping\GeekShopping.IdentityServer\obj\Debug\net5.0\GeekShopping.IdentityServer.pdb
 C:\Users\Tonic\Documents\GeekSopping_Core05\GeeKShopping\GeekShopping.IdentityServer\obj\Debug\net5.0\GeekShopping.IdentityServer.genruntimeconfig.cache
 C:\Users\Tonic\Documents\GeekSopping_Core05\GeeKShopping\GeekShopping.IdentityServer\obj\Debug\net5.0\ref\GeekShopping.IdentityServer.dll
-C:\Users\Tonic\Documents\GeekSopping_Core05\GeeKShopping\GeekShopping.IdentityServer\bin\Debug\net5.0\keys\is-signing-key-3345E525BCB74D64125AD229D7548F64.json
+C:\Users\Tonic\Documents\GeekSopping_Core05\GeeKShopping\GeekShopping.IdentityServer\bin\Debug\net5.0\keys\is-signing-key-CBFF14A1CAFCC8A1C07C125989EAFBE0.json
