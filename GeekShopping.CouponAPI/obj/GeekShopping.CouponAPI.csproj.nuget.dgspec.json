@@ -1,32 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Tonic\\Documents\\GeekSopping_Core05\\GeeKShopping\\GeekShopping.CouponAPI\\GeekShopping.CouponAPI.csproj": {}
+    "C:\\Users\\Tonic\\Documents\\GeekShoppingTccPucV01\\GeeKShopping\\GeekShopping.CouponAPI\\GeekShopping.CouponAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Tonic\\Documents\\GeekSopping_Core05\\GeeKShopping\\GeekShopping.CouponAPI\\GeekShopping.CouponAPI.csproj": {
+    "C:\\Users\\Tonic\\Documents\\GeekShoppingTccPucV01\\GeeKShopping\\GeekShopping.CouponAPI\\GeekShopping.CouponAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Tonic\\Documents\\GeekSopping_Core05\\GeeKShopping\\GeekShopping.CouponAPI\\GeekShopping.CouponAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Tonic\\Documents\\GeekShoppingTccPucV01\\GeeKShopping\\GeekShopping.CouponAPI\\GeekShopping.CouponAPI.csproj",
         "projectName": "GeekShopping.CouponAPI",
-        "projectPath": "C:\\Users\\Tonic\\Documents\\GeekSopping_Core05\\GeeKShopping\\GeekShopping.CouponAPI\\GeekShopping.CouponAPI.csproj",
+        "projectPath": "C:\\Users\\Tonic\\Documents\\GeekShoppingTccPucV01\\GeeKShopping\\GeekShopping.CouponAPI\\GeekShopping.CouponAPI.csproj",
         "packagesPath": "C:\\Users\\Tonic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Tonic\\Documents\\GeekSopping_Core05\\GeeKShopping\\GeekShopping.CouponAPI\\obj\\",
+        "outputPath": "C:\\Users\\Tonic\\Documents\\GeekShoppingTccPucV01\\GeeKShopping\\GeekShopping.CouponAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Tonic\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -37,42 +38,42 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[11.0.1, )"
+              "version": "[10.1.1, )"
             },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[11.0.0, )"
+              "version": "[8.1.1, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[6.0.0-preview.6.21355.2, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[6.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[5.0.0, )"
+              "version": "[6.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[5.6.3, )"
+              "version": "[6.1.5, )"
             },
             "Swashbuckle.AspNetCore.Annotations": {
               "target": "Package",
-              "version": "[5.6.3, )"
+              "version": "[6.1.5, )"
             },
             "Swashbuckle.AspNetCore.SwaggerUI": {
               "target": "Package",
-              "version": "[5.6.3, )"
+              "version": "[6.1.5, )"
             }
           },
           "imports": [
@@ -94,7 +95,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.412\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

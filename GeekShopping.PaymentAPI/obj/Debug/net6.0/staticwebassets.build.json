@@ -1,0 +1,34 @@
+{
+  "Version": 1,
+  "Hash": "li8jLMXylH39Z4/roOyownH28dNwGSTKOWTPTpRMC1E=",
+  "Source": "GeekShopping.PaymentAPI",
+  "BasePath": "_content/GeekShopping.PaymentAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\Tonic\\Documents\\GeekShoppingTccPucV01\\GeeKShopping\\GeekShopping.CartAPI\\GeekShopping.CartAPI.csproj",
+      "Version": 2,
+      "Source": "GeekShopping.CartAPI",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    },
+    {
+      "Identity": "C:\\Users\\Tonic\\Documents\\GeekShoppingTccPucV01\\GeeKShopping\\GeekShopping.OrderAPI\\GeekShopping.OrderAPI.csproj",
+      "Version": 2,
+      "Source": "GeekShopping.OrderAPI",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

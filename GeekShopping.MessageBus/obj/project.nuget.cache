@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WWGlqvdpNB4NVtJyhk71BvWRMkekiAYHWWnq5vgDAYOoEYCAg8Hl9RuXnYhgpgfPeSee7E9FTmzz9RupMu3wyQ==",
+  "dgSpecHash": "K50OH7rmCdrxtmIfLSxnBkcllZjOAL/VMfv+4KcYnHKl9JEzNSuZiErVvLjODRGupThY6n5iHAdPZnUzBN+KgA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Tonic\\Documents\\GeekSopping_Core05\\GeeKShopping\\GeekShopping.MessageBus\\GeekShopping.MessageBus.csproj",
+  "projectFilePath": "C:\\Users\\Tonic\\Documents\\GeekShoppingTccPucV01\\GeeKShopping\\GeekShopping.MessageBus\\GeekShopping.MessageBus.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

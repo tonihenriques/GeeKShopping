@@ -31,9 +31,10 @@ namespace GeekShopping.ProductAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            
+           
+
             services.AddDbContext<SqlContext>(options =>
-                            options.UseSqlServer(Configuration.GetConnectionString("SQLConectionString")));
+                       options.UseSqlServer(Configuration.GetConnectionString("SQLConectionString")));
 
             IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
             services.AddSingleton(mapper);

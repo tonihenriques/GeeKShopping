@@ -1,0 +1,68 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "GeekShopping.CouponAPI",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/v1/Coupon/{couponCode}": {
+      "get": {
+        "tags": [
+          "Coupon"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "couponCode",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/CouponVO"
+            }
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "CouponVO": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int64",
+          "type": "integer"
+        },
+        "couponCode": {
+          "type": "string"
+        },
+        "discountAmount": {
+          "format": "double",
+          "type": "number"
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "Bearer": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header",
+      "description": "Enter 'Bearer' [space] and your token!"
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

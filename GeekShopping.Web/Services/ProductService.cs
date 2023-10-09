@@ -1,6 +1,8 @@
 ﻿using GeekShopping.Web.Models;
 using GeekShopping.Web.Services.IServices;
 using GeekShopping.Web.Utils;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.VisualBasic;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
@@ -13,7 +15,7 @@ namespace GeekShopping.Web.Services
     {
         private readonly HttpClient _client;
         public const string BasePath = "api/v1/product";
-
+      
         public ProductService(HttpClient client)
         {
             _client = client ?? throw new ArgumentNullException(nameof(client));
@@ -23,6 +25,10 @@ namespace GeekShopping.Web.Services
         {
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var response = await _client.GetAsync(BasePath);
+            if(response == null)
+            {
+                
+            }
             return await response.ReadContentAs<List<ProductViewModel>>();
         }
 

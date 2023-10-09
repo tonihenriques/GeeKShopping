@@ -1,16 +1,19 @@
-﻿using GeekShopping.OrderAPI.Messages;
+﻿using GeekShopping.CartAPI.Repository;
+using GeekShopping.OrderAPI.Messages;
 using GeekShopping.OrderAPI.Model;
 using GeekShopping.OrderAPI.RabbitMQSender;
-using GeekShopping.OrderAPI.Repository;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
+using static System.Net.WebRequestMethods;
 
 namespace GeekShopping.OrderAPI.MessageConsumer
 {
@@ -22,17 +25,20 @@ namespace GeekShopping.OrderAPI.MessageConsumer
         private IRabbitMQMessageSender _rabbitMQMessageSender;
 
         public RabbitMQCheckoutConsumer(OrderRepository repository,
-            IRabbitMQMessageSender rabbitMQMessageSender)
+        IRabbitMQMessageSender rabbitMQMessageSender)
         {
             _repository = repository;
             _rabbitMQMessageSender = rabbitMQMessageSender;
+
             var factory = new ConnectionFactory
             {
                 HostName = "localhost",
+                Password = "guest",
                 UserName = "guest",
-                Password = "guest"
             };
+            //factory.Uri = new Uri("amqp://user:user@52.186.48.56:15672/vhost");
             _connection = factory.CreateConnection();
+           
             _channel = _connection.CreateModel();
             _channel.QueueDeclare(queue: "checkoutqueue", false, false, false, arguments: null);  
         }

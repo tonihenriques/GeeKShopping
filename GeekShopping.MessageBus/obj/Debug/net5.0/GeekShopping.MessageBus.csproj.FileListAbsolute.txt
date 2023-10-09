@@ -10,3 +10,15 @@ C:\Users\Tonic\Documents\GeekSopping_Core05\GeeKShopping\GeekShopping.MessageBus
 C:\Users\Tonic\Documents\GeekSopping_Core05\GeeKShopping\GeekShopping.MessageBus\obj\Debug\net5.0\refint\GeekShopping.MessageBus.dll
 C:\Users\Tonic\Documents\GeekSopping_Core05\GeeKShopping\GeekShopping.MessageBus\obj\Debug\net5.0\GeekShopping.MessageBus.pdb
 C:\Users\Tonic\Documents\GeekSopping_Core05\GeeKShopping\GeekShopping.MessageBus\obj\Debug\net5.0\ref\GeekShopping.MessageBus.dll
+C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.MessageBus\bin\Debug\net5.0\GeekShopping.MessageBus.deps.json
+C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.MessageBus\bin\Debug\net5.0\GeekShopping.MessageBus.dll
+C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.MessageBus\bin\Debug\net5.0\GeekShopping.MessageBus.pdb
+C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.MessageBus\obj\Debug\net5.0\GeekShopping.MessageBus.csproj.AssemblyReference.cache
+C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.MessageBus\obj\Debug\net5.0\GeekShopping.MessageBus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.MessageBus\obj\Debug\net5.0\GeekShopping.MessageBus.AssemblyInfoInputs.cache
+C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.MessageBus\obj\Debug\net5.0\GeekShopping.MessageBus.AssemblyInfo.cs
+C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.MessageBus\obj\Debug\net5.0\GeekShopping.MessageBus.csproj.CoreCompileInputs.cache
+C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.MessageBus\obj\Debug\net5.0\GeekShopping.MessageBus.dll
+C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.MessageBus\obj\Debug\net5.0\refint\GeekShopping.MessageBus.dll
+C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.MessageBus\obj\Debug\net5.0\GeekShopping.MessageBus.pdb
+C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.MessageBus\obj\Debug\net5.0\ref\GeekShopping.MessageBus.dll

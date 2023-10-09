@@ -21,11 +21,8 @@ namespace GeekShopping.CartAPI.Repository
             //"api/v1/coupon"
             _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var response = await _client.GetAsync($"/api/v1/coupon/{couponCode}");
-
             var content = await response.Content.ReadAsStringAsync();
-
             if (response.StatusCode != HttpStatusCode.OK) return new CouponVO();
-
             return JsonSerializer.Deserialize<CouponVO>(content,
                 new JsonSerializerOptions
                 { PropertyNameCaseInsensitive = true });

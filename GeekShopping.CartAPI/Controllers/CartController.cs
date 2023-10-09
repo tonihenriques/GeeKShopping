@@ -2,12 +2,9 @@
 using GeekShopping.CartAPI.Messages;
 using GeekShopping.CartAPI.RabbitMQSender;
 using GeekShopping.CartAPI.Repository;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace GeekShopping.CartAPI.Controllers
@@ -27,6 +24,12 @@ namespace GeekShopping.CartAPI.Controllers
             _cartRepository = cartRepository ?? throw new ArgumentNullException(nameof(cartRepository));
             _couponRepository = couponRepository ?? throw new ArgumentNullException(nameof(couponRepository));
             _rabbitMQMessageSender = rabbitMQMessageSender ?? throw new ArgumentNullException(nameof(rabbitMQMessageSender));
+        }
+
+        [HttpGet]
+        public IEnumerable<string> Get()
+        {
+            return new string[] { "CartAPI no ar" };
         }
 
         [HttpGet("find-cart/{id}")]
@@ -83,16 +86,12 @@ namespace GeekShopping.CartAPI.Controllers
             string token = Request.Headers["Authorization"];
 
             if (vo?.UserId == null) return BadRequest();
-
             var cart = await _cartRepository.FindCartByUserId(vo.UserId);
-
             if (cart == null) return NotFound();
-
             if (!string.IsNullOrEmpty(vo.CouponCode))
             {
                 CouponVO coupon = await _couponRepository.GetCoupon(
                     vo.CouponCode, token);
-
                 if (vo.DiscountAmount != coupon.DiscountAmount)
                 {
                     return StatusCode(412);
@@ -103,6 +102,8 @@ namespace GeekShopping.CartAPI.Controllers
 
             // RabbitMQ logic comes here!!!
             _rabbitMQMessageSender.SendMessage(vo, "checkoutqueue");
+
+            await _cartRepository.ClearCart(vo.UserId);
 
             return Ok(vo);
         }

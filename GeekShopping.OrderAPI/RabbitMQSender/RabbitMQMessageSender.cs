@@ -54,6 +54,8 @@ namespace GeekShopping.OrderAPI.RabbitMQSender
                     UserName = _userName,
                     Password = _password
                 };
+
+                //factory.Uri = new Uri("amqp://user:user@52.186.48.56:15672/vhost");
                 _connection = factory.CreateConnection();
             }
             catch (Exception)
