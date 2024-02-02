@@ -428,3 +428,4 @@ C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.Product
 C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.ProductAPI\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.ProductAPI\bin\Release\net6.0\GeekShopping.IdentityServer.dll
 C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.ProductAPI\bin\Release\net6.0\GeekShopping.IdentityServer.pdb
+C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.ProductAPI\bin\Release\net6.0\keys\is-signing-key-AC95902CEEF27DBA42B9986A8BC7944D.json

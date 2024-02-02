@@ -71,6 +71,12 @@ namespace GeekShopping.IdentityServer
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+
+            app.UseCors(x => x
+           .AllowAnyOrigin()
+           .AllowAnyMethod()
+           .AllowAnyHeader());
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 

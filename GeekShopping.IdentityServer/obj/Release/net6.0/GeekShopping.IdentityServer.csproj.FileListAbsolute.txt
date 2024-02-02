@@ -416,3 +416,4 @@ C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.Identit
 C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.IdentityServer\obj\Release\net6.0\GeekShopping.IdentityServer.pdb
 C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.IdentityServer\obj\Release\net6.0\GeekShopping.IdentityServer.genruntimeconfig.cache
 C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.IdentityServer\obj\Release\net6.0\ref\GeekShopping.IdentityServer.dll
+C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.IdentityServer\bin\Release\net6.0\keys\is-signing-key-AC95902CEEF27DBA42B9986A8BC7944D.json
