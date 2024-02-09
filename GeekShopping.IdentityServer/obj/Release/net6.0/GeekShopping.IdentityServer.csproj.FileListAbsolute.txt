@@ -12,7 +12,6 @@ C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.Identit
 C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.IdentityServer\bin\Release\net6.0\keys\is-signing-key-947619C7B998A1AB70C48FB79D499DF1.json
 C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.IdentityServer\bin\Release\net6.0\keys\is-signing-key-9C8298C7AD769E34746D6ED07C615472.json
 C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.IdentityServer\bin\Release\net6.0\keys\is-signing-key-C05AE8661ABF2DC369385ECA35466866.json
-C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.IdentityServer\bin\Release\net6.0\keys\is-signing-key-CB1A9B2653F59328D31DD264EB480CD4.json
 C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.IdentityServer\bin\Release\net6.0\keys\is-signing-key-CBFF14A1CAFCC8A1C07C125989EAFBE0.json
 C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.IdentityServer\bin\Release\net6.0\keys\is-signing-key-D8FED33B521C5F044A10118799A9D92C.json
 C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.IdentityServer\bin\Release\net6.0\keys\is-signing-key-FCEF3800B8C1E5121E547D6F97177177.json
@@ -416,4 +415,4 @@ C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.Identit
 C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.IdentityServer\obj\Release\net6.0\GeekShopping.IdentityServer.pdb
 C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.IdentityServer\obj\Release\net6.0\GeekShopping.IdentityServer.genruntimeconfig.cache
 C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.IdentityServer\obj\Release\net6.0\ref\GeekShopping.IdentityServer.dll
-C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.IdentityServer\bin\Release\net6.0\keys\is-signing-key-AC95902CEEF27DBA42B9986A8BC7944D.json
+C:\Users\Tonic\Documents\GeekShoppingTccPucV01\GeeKShopping\GeekShopping.IdentityServer\bin\Release\net6.0\keys\is-signing-key-4EB0192EFB972A158948141D8BB0B00E.json
