@@ -1,5 +1,5 @@
 # GeeKShopping
-Aplicativo de referência de exemplo de microserviços .NET Aplicativo de referência .NET Core de exemplo, original desenvolvido pela Microsoft, baseado em uma arquitetura simplificada de microsserviços e contêineres Docker.  Lembrando: O foco é MICROSERVIÇOS
+Aplicativo de referência de exemplo de microsserviços .NET Aplicativo de referência .NET Core de exemplo, original desenvolvido pela Microsoft, baseado em uma arquitetura simplificada de microsserviços e contêineres Docker.  Lembrando: O foco é MICROSERVIÇOS
 
 ![image](https://user-images.githubusercontent.com/22334765/192876670-a76d0e7b-5bba-41ee-90c9-80e9fd2296d2.png)
 
@@ -8,7 +8,7 @@ Aplicativo de referência de exemplo de microserviços .NET Aplicativo de refer�
    <img src="https://github.com/dotnet-architecture/eShopOnContainers/raw/dev/img/eshop_logo.png" alt="eShop logo" title="eShopOnContainers" align="right" height="60" />
 </a>
 
-# .NET Microservices Sample Reference Application
+# .NET Microsservices Sample Reference Application
 
 Sample .NET Core reference application, powered by Microsoft, based on a simplified microservices architecture and Docker containers.
 
